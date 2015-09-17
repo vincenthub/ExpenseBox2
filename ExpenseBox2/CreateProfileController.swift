@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreateProfileController.swift
 //  ExpenseBox2
 //
 //  Created by Vincent Pacul on 7/7/15.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet weak var profileTableView: UITableView!
-    
+class CreateProfileController: UIViewController {
 
+    @IBOutlet weak var listOfPurposesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,4 +25,3 @@ class ViewController: UIViewController {
 
 
 }
-

@@ -14,6 +14,11 @@
 		BF0CADD01B4B915B00D02936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0CADCF1B4B915B00D02936 /* Images.xcassets */; };
 		BF0CADD31B4B915B00D02936 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0CADD11B4B915B00D02936 /* LaunchScreen.xib */; };
 		BF0CADDF1B4B915B00D02936 /* ExpenseBox2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CADDE1B4B915B00D02936 /* ExpenseBox2Tests.swift */; };
+		BF0CADEA1B4B934C00D02936 /* plus_math-75.png in Resources */ = {isa = PBXBuildFile; fileRef = BF0CADE91B4B934C00D02936 /* plus_math-75.png */; };
+		BF0CADF11B4B944100D02936 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CADF01B4B944100D02936 /* Profile.swift */; };
+		BF0CADF31B4B947600D02936 /* CreateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CADF21B4B947600D02936 /* CreateProfileController.swift */; };
+		BF0CADF81B4BD76300D02936 /* LibraryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CADF71B4BD76300D02936 /* LibraryApi.swift */; };
+		BF0CADFA1B4BD7E100D02936 /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CADF91B4BD7E100D02936 /* PersistencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		BF0CADD81B4B915B00D02936 /* ExpenseBox2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseBox2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0CADDD1B4B915B00D02936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF0CADDE1B4B915B00D02936 /* ExpenseBox2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseBox2Tests.swift; sourceTree = "<group>"; };
+		BF0CADE91B4B934C00D02936 /* plus_math-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_math-75.png"; sourceTree = "<group>"; };
+		BF0CADF01B4B944100D02936 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		BF0CADF21B4B947600D02936 /* CreateProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateProfileController.swift; sourceTree = "<group>"; };
+		BF0CADF71B4BD76300D02936 /* LibraryApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryApi.swift; sourceTree = "<group>"; };
+		BF0CADF91B4BD7E100D02936 /* PersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +89,12 @@
 		BF0CADC21B4B915B00D02936 /* ExpenseBox2 */ = {
 			isa = PBXGroup;
 			children = (
+				BF0CADED1B4B941900D02936 /* Model */,
+				BF0CADEC1B4B93AC00D02936 /* View */,
+				BF0CADEB1B4B93A000D02936 /* Controller */,
+				BF0CADF41B4BCB4400D02936 /* API */,
+				BF0CADE81B4B934400D02936 /* images */,
 				BF0CADC51B4B915B00D02936 /* AppDelegate.swift */,
-				BF0CADCA1B4B915B00D02936 /* ViewController.swift */,
-				BF0CADCC1B4B915B00D02936 /* Main.storyboard */,
 				BF0CADCF1B4B915B00D02936 /* Images.xcassets */,
 				BF0CADD11B4B915B00D02936 /* LaunchScreen.xib */,
 				BF0CADC71B4B915B00D02936 /* ExpenseBox2.xcdatamodeld */,
@@ -113,6 +126,48 @@
 				BF0CADDD1B4B915B00D02936 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF0CADE81B4B934400D02936 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CADE91B4B934C00D02936 /* plus_math-75.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		BF0CADEB1B4B93A000D02936 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CADCA1B4B915B00D02936 /* ViewController.swift */,
+				BF0CADF21B4B947600D02936 /* CreateProfileController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF0CADEC1B4B93AC00D02936 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CADCC1B4B915B00D02936 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF0CADED1B4B941900D02936 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CADF01B4B944100D02936 /* Profile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF0CADF41B4BCB4400D02936 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CADF71B4BD76300D02936 /* LibraryApi.swift */,
+				BF0CADF91B4BD7E100D02936 /* PersistencyManager.swift */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +214,7 @@
 		BF0CADB81B4B915B00D02936 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Vincent Pacul";
 				TargetAttributes = {
@@ -196,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0CADCE1B4B915B00D02936 /* Main.storyboard in Resources */,
+				BF0CADEA1B4B934C00D02936 /* plus_math-75.png in Resources */,
 				BF0CADD31B4B915B00D02936 /* LaunchScreen.xib in Resources */,
 				BF0CADD01B4B915B00D02936 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0CADF81B4BD76300D02936 /* LibraryApi.swift in Sources */,
 				BF0CADCB1B4B915B00D02936 /* ViewController.swift in Sources */,
+				BF0CADF11B4B944100D02936 /* Profile.swift in Sources */,
+				BF0CADF31B4B947600D02936 /* CreateProfileController.swift in Sources */,
 				BF0CADC61B4B915B00D02936 /* AppDelegate.swift in Sources */,
 				BF0CADC91B4B915B00D02936 /* ExpenseBox2.xcdatamodeld in Sources */,
+				BF0CADFA1B4BD7E100D02936 /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +474,7 @@
 				BF0CADE41B4B915B00D02936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF0CADE51B4B915B00D02936 /* Build configuration list for PBXNativeTarget "ExpenseBox2Tests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +483,7 @@
 				BF0CADE71B4B915B00D02936 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
